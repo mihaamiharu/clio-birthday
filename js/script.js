@@ -18,16 +18,21 @@
 
 })(jQuery);
 
-$(document).on('click', function(){
-    document.getElementById("my_audio").play();
-    console.log('Clio Birthday');
-});
+// $(document).on('click', function(){
+//     document.getElementById("my_audio").play();
+//     console.log('Clio Birthday');
+// });
 
-function pauseAudio() { 
-    document.getElementById("my_audio").pause();
-    console.log('Shaadi me pakka aana');
-    event.stopPropagation();
-};
+function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+}
+
+// function pauseAudio() { 
+//     document.getElementById("my_audio").pause();
+//     console.log('Shaadi me pakka aana');
+//     event.stopPropagation();
+// };
 
 // Set the date we're counting down to
 var countDownDate = new Date("September 11, 2021 17:00:00").getTime();
