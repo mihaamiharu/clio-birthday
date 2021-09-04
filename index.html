@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/17777/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Thank you for the wishes :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+      <link rel="shortcut icon" href="favicon-32x32.png" type="image/png"> 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <title>Birthday Invitation  | Clio Nirell Marvelyn </title>
+
+      <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+   </head>
+   <body>
+      <!-- partial:index.partial.html -->
+      <div class="sakura-falling"></div>
+      <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
+      <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration" > 
+      <section id="media"></section>
+      <div class="wrap">
+        
+         <div class="title">
+          <p><b> Birthday Invitation </b></p>
+            <h1>Clio Nirell Marvelyn</h1>
+            <!-- <h2>❤️AND❤️</h2>
+            <h1>ISHA</h1> -->
+            <h3>I'm Turning 17! 🥂 </h3>
+            <p>
+               on <span class="date">11 September 2021</span></29>             
+            </p>
+
+
+            <a href="#time">
+              <div class="venue"> Open Invitation </div>
+            </a>
+            
+            <br>   
+            <br> 
+
+         </div>
+      </div>
+
+
+      <br>   
+      <hr class="solid">
+
+      <div id="time"></div>
+      <p class="footer">
+         You're Invited to 
+      </p>
+      <p class="dance-med">
+        Clio Nirell Marvelyn
+      </p>
+     <p class="footer">
+      18<sup>th</sup> Birthday Celebration
+     </p>
+
+     <p class="happiness">Saturday, September 11<sup>th</sup> 2021 </p>
+     <p class="happiness">17:00 <sup>s/d</sup> 19:00 WIB</p>
+     
+     <p class="dance-med">
+      Dress Code
+     </p>
+      <div class="actions">
+          <div class="dresscode">Pastel or White</div>
+      </div>
+
+      <p class="happiness">Swargaloka Aryaduta Hotel</p>
+      <p class="footer">
+         Swargaloka Restaurant Lantai 3 <br>
+         Jl. Sumatra No.51, Bandung
+         <a href="https://goo.gl/maps/39n2WnBfwcgPLnUu8" target="_blank">
+          <div class="venue"><i class="fa fa-map-marker" aria-hidden="true"> Get Direction </i></div>
+         </a>
+      </p>
+      <div class="music">
+         <audio src="./assets/mp3/cleo-birhtday.mp3" id="my_audio" loop="loop"></audio> 
+        <!-- <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>  -->
+      </div>
+           </div>
+         </div>
+       
+       </div>
+
+       <br>   
+       <hr class="solid">  
+       <p class="dance-med">
+        Send Your Wishes
+       </p>
+       <div class="row">
+        <div class="column">
+          <form id="myForm">
+            <label>Name</label>
+            <br/>
+            <input name="SenderName" />
+            <br/>
+            <label>Your Wishes</label>
+            <br/>
+            <textarea name="BirthdayWishes">
+            </textarea>
+            <br/>
+            <label>Attendance</label>
+            <br/>
+            <input type="radio" id="attendance" name="attendance" value="Yes" /> Yes<br/>
+            <input type="radio" id="attendance" name="attendance" value="No" /> No<br/>
+            <br/>
+          </form>
+
+          <button onclick="SubForm()">Send</button>
+    
+        </div>
+
+        <div class="column">
+          <iframe src="https://docs.google.com/spreadsheets/d/1YCZsD4TdzMdo8lZX7bqrXNBosyNQng5fsZClM4S9q6o/gviz/tq?tqx=out:html&tq&gid=0"> </iframe>
+        </div>
+      </div>
+
+      <br>   
+      <hr class="solid">
+
+      <p class="footerzz">
+        I hope that you will be able to come. 
+      </p>
+      
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+      <script  src="./js/script.js"></script>
+      <script src="/path/to/flickity.pkgd.min.js"></script>
+</body>
+
+</html>
+
