@@ -8,7 +8,7 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/17810/",
+				url:"https://sheetdb.io/api/v1/uisgkx87686zb",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
@@ -170,8 +170,8 @@
           <div class="leftalize"> 
           <label>Attendance</label>
             <br/>
-            <input type="radio" id="attendance" name="attendance" value="Yes" /> Yes<br/>
-            <input type="radio" id="attendance" name="attendance" value="No" /> No<br/>
+            <input type="radio" id="attendance" name="Attendance" value="Yes" /> Yes<br/>
+            <input type="radio" id="attendance" name="Attendance" value="No" /> No<br/>
           </div>
         </form>
         <br/>
@@ -196,12 +196,12 @@
         window.onload = fetchAPI;
 
         function fetchAPI() {
-          fetch('https://api.apispreadsheets.com/data/17810/')
+          fetch('https://sheetdb.io/api/v1/uisgkx87686zb')
             .then(res => res.text())
             .then((out) => {
               let jsonData = JSON.parse(out);
-              for (let i = 0; i < jsonData.data.length; i++) {
-                let earnings = jsonData.data[i];
+              for (let i = 0; i < jsonData.length; i++) {
+                let earnings = jsonData[i];
                 myData.innerHTML +=
                   "<td align='center' > &#34" + earnings.Wishes + " &#34</td>" +
                   "<tr><td align='center' style='font-style: italic; font-size: 12px;'> - " + earnings.Name + "</td>" + "<br/>"; 
