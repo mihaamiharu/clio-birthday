@@ -23,10 +23,7 @@
 //     console.log('Clio Birthday');
 // });
 
-function play() {
-    var audio = document.getElementById("audio");
-    audio.play();
-}
+
 
 // function pauseAudio() { 
 //     document.getElementById("my_audio").pause();
