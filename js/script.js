@@ -105,3 +105,4 @@ console.log(
     `%c Birthday Complete \n\n`,
     'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
 )
+
