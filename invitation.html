@@ -8,7 +8,7 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/17802/",
+				url:"https://api.apispreadsheets.com/data/17808/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
@@ -143,21 +143,17 @@
        <!-- <div class="container-birthday">
         <iframe src="https://docs.google.com/spreadsheets/d/1YCZsD4TdzMdo8lZX7bqrXNBosyNQng5fsZClM4S9q6o/gviz/tq?tqx=out:html&tq&gid=0" height="315" width="450" allowfullscreen="" frameborder="0" ></iframe>
       </div> -->
-      <div class="container-birthday">
-        <table>
-          <thead>
+      
+
+      <div class="container-wishes">
+        <table id="wishes">
             <tr>
               <th>Name</th>
-              <th>Wishes</th>
+              <th text-align: center;>Wishes</th>
             </tr>
-          </thead>
           <tbody id="myData">
             <tbody>
         </table>
-        
-        <script> 
-        
-        </script>
       </div>
       
       <hr class="hr3">  
@@ -198,17 +194,13 @@
       <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
       <script  src="./js/script.js"></script>
       <script src="/path/to/flickity.pkgd.min.js"></script>
-      <script> 
-       window.onload = function() {
-        document.getElementById("audio").play();
-      }
-      </script>
+
       <script>
        
         window.onload = fetchAPI;
 
         function fetchAPI() {
-          fetch('https://api.apispreadsheets.com/data/17802/')
+          fetch('https://api.apispreadsheets.com/data/17808/')
             .then(res => res.text())
             .then((out) => {
               let jsonData = JSON.parse(out);

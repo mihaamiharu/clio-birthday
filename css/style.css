@@ -17,18 +17,27 @@ html {
 	border-radius: 12px;
 }
 
-.container-birthday {
-	display: flex;
-	align-items: center;
-	padding-left: 45px;
+#wishes {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.iframe {
-	display: block;
-  border-style:none;
-	justify-content: center;
+#wishes td, #wishes th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
+#wishes tr:hover {background-color: #ddd;}
+
+#wishes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #8672a5;
+  color: white;
+	
+}
 
 
 .button2:hover {
