@@ -17,26 +17,9 @@ html {
 	border-radius: 12px;
 }
 
-#wishes {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#wishes td, #wishes th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#wishes tr:hover {background-color: #ddd;}
-
-#wishes th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #8672a5;
-  color: white;
-	
+.wishes-table td{
+	text-align: center;
+  vertical-align: middle;
 }
 
 
