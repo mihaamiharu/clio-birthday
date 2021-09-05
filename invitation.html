@@ -8,12 +8,12 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/17808/",
+				url:"https://api.apispreadsheets.com/data/17810/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
 					alert("Thank you for the wishes :)")
-          location.reload();
+          // location.reload();
 				},
 				error: function(){
 					alert("There was an error :(")
@@ -196,7 +196,7 @@
         window.onload = fetchAPI;
 
         function fetchAPI() {
-          fetch('https://api.apispreadsheets.com/data/17808/')
+          fetch('https://api.apispreadsheets.com/data/17810/')
             .then(res => res.text())
             .then((out) => {
               let jsonData = JSON.parse(out);
