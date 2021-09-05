@@ -8,7 +8,7 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/17777/",
+				url:"https://api.apispreadsheets.com/data/17802/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
@@ -63,7 +63,7 @@
 
 
       <br>   
-      <hr class="solid">
+      
 
       <div id="time"></div>
       <p class="footer">
@@ -103,12 +103,75 @@
        
        </div>
 
-       <br>   
-       <hr class="solid">  
+       <hr class="hr3">  
+       <!-- Health Protocol -->
+       <div text-align=center>
+         
+        <p class="dance-med">
+          Clio Nirell Marvelyn
+        </p>
+        <p class="happiness">Sweet 17<sup>th</sup> BIRTHDAY PROTOCOL </p>
+        <p class="footer">
+          To make sure that everyone is safe during the party, <br/>
+          here's some protocols that need to be followed: 
+        </p>
+
+         <div class="center">
+          <img class="tile__img" src="./assets/img/Face-Mask.jpg" alt=""  />
+        </div>
+
+        <p class="footer">
+          Please wear your mask all the time. <br/> <br/><br/>
+        </p>
+
+        <hr class="hr3">  
+
+        <br/>
+        <p class="footer">
+          We make sure that all the guests, crews and vendors's body tempeature are safe to join the party. <br/>
+        </p>
+
+        <div class="center">
+          <img class="tile__img" src="./assets/img/Temperature-Gun.jpg" alt=""  />
+        </div>
+
+
+       </div>
+       <hr class="hr3">  
+       <p class="dance-med">
+        Dear Clio
+       </p>
+       <div class="container-birthday">
+        <iframe src="https://docs.google.com/spreadsheets/d/1YCZsD4TdzMdo8lZX7bqrXNBosyNQng5fsZClM4S9q6o/gviz/tq?tqx=out:html&tq&gid=0" height="315" width="450" allowfullscreen="" frameborder="0" ></iframe>
+      </div>
+      <hr class="hr3">  
        <p class="dance-med">
         Send Your Wishes
        </p>
-       <div class="row">
+
+       <div class="column1">
+        <form id="myForm">
+      
+          <label for="Name">Sender Name</label>
+          <input type="text"name="Name" placeholder="Your name..">
+
+          <br>
+          <label for="BirthdayWishes">Your Wishes</label> <br>
+          <textarea name="Birthday Wishes" placeholder="Say your wishes to clio.." style="height:200px"></textarea>
+          <br/>
+          <div class="leftalize"> 
+          <label>Attendance</label>
+            <br/>
+            <input type="radio" id="attendance" name="attendance" value="Yes" /> Yes<br/>
+            <input type="radio" id="attendance" name="attendance" value="No" /> No<br/>
+          </div>
+        </form>
+        <br/>
+        <button class="button button2" onclick="SubForm()">Send</button>
+    
+      </div>
+      
+       <!-- <div class="row">
         <div class="column">
           <form id="myForm">
             <label>Name</label>
@@ -129,20 +192,18 @@
 
           <button onclick="SubForm()">Send</button>
     
-        </div>
+        </div> -->
 
-        <div class="column">
+        <!-- <div class="column">
           <iframe src="https://docs.google.com/spreadsheets/d/1YCZsD4TdzMdo8lZX7bqrXNBosyNQng5fsZClM4S9q6o/gviz/tq?tqx=out:html&tq&gid=0"> </iframe>
         </div>
-      </div>
+      </div> -->
 
       <br>   
-      <hr class="solid">
+      <hr class="hr3">
 
-      <p class="footerzz">
-        I hope that you will be able to come. 
-      </p>
       
+  
       <!-- partial -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
       <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>

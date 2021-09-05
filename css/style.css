@@ -1,29 +1,74 @@
 html {
   scroll-behavior: smooth;
 }
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-
-.footerzz {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #E0BBE4;
+.button {
+  background-color: #8672a5;
+  border: none;
   color: white;
+  padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+	border-radius: 12px;
+}
+
+.container-birthday {
+	display: flex;
+	align-items: center;
+	padding-left: 45px;
+}
+
+.iframe {
+	display: block;
+  border-style:none;
+	justify-content: center;
 }
 
 
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+	padding-left: 90px;
+}
+
+.leftalize {
+	text-align: left;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #FEFBF3;
+  padding: 20px;
+}
+
+.column1 {
+  border-radius: 5px;
+  background-color: #FEFBF3;
+  padding: 20px;
+	text-align: center;
 }
 
 @-webkit-keyframes fall {
@@ -38,8 +83,13 @@ html {
 }
 
 /* Solid border */
-hr.solid {
-  border-top: 3px solid #bbb;
+.hr3 {
+	border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#F0D9FF;
+  height: 1px;
 }
 
 @keyframes fall {
@@ -424,7 +474,7 @@ img {
 	font-style: normal;
 	font-size: 65px;
 	margin: 30px 0;
-	color: #674ea7;
+	color: #8672a5;
 	padding: 10px;
 
 }
@@ -445,7 +495,7 @@ img {
 	font-weight: bolder;
 	font-style: normal;
 	font-size: 32px;
-	color: #674ea7;
+	color: #8672a5;
 	margin: 16px;
 	text-align: center;
 }
@@ -455,7 +505,7 @@ img {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 24px;
-	color: #674ea7;
+	color: #8672a5;
 	margin-top: 5px;
 }
 
@@ -515,7 +565,7 @@ body {
 .venue {
 	width: auto;
 	height: auto;
-	background-color: #674ea7;
+	background-color: #8672a5;
 	border-radius: 16px;
 	text-align: center;
 	color: #fff;
@@ -526,7 +576,7 @@ body {
 .dresscode {
 	width: auto;
 	height: auto;
-	background-color: #E0BBE4;
+	background-color: #8672a5;
 	border-radius: 20px;
 	text-align: center;
 	color: #ffff;
@@ -789,7 +839,7 @@ a {
 
 
   .tile__img {
-	max-width: 65%;
+	max-width: 50%;
 	text-align: center;
 	height: auto;
 	object-fit: cover;
