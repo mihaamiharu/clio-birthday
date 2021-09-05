@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/17802/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Thank you for the wishes :)")
+          location.reload();
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+      <link rel="shortcut icon" href="favicon-32x32.png" type="image/png"> 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <title>Birthday Invitation  | Clio Nirell Marvelyn </title>
+
+      <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+   </head>
+   <body>
+      <!-- partial:index.partial.html -->
+      <div class="sakura-falling"></div>
+      <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
+      <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration" > 
+      <section id="media"></section>
+      <!-- <div class="wrap">
+        
+         <div class="title">
+          <p><b> Birthday Invitation </b></p>
+            <h1>Clio Nirell Marvelyn</h1> -->
+            <!-- <h2>❤️AND❤️</h2>
+            <h1>ISHA</h1> -->
+            <!-- <h3>I'm Turning 17! 🥂 </h3>
+            <p>
+               on <span class="date">Saturday, 11 September 2021</span></29>             
+            </p>
+
+
+            <a href="#time" onclick="play()">
+              <div class="venue"> Open Invitation </div>
+            </a>
+            
+            <br>   
+            <br> 
+
+         </div>
+      </div> -->
+
+
+      <br/><br/><br/><br/><br/>  <br/><br/>
+      
+
+      <div id="time"></div>
+      <p class="footer">
+         You're Invited to 
+      </p>
+      <p class="dance-med">
+        Clio Nirell Marvelyn
+      </p>
+     <p class="footer">
+      Sweet 17<sup>th</sup> Birthday Party
+     </p>
+
+     <p class="happiness">Saturday, September 11<sup>th</sup> 2021 </p>
+     <p class="happiness">5.00 pm - End</p>
+     
+     <p class="dance-med">
+      Dress Code
+     </p>
+      <div class="actions">
+          <div class="dresscode">Pastel or White</div>
+      </div>
+
+      <p class="happiness">Swargaloka Aryaduta Hotel</p>
+      <p class="footer">
+         Swargaloka Restaurant Lantai 3 <br>
+         Jl. Sumatra No.51, Bandung
+         <a href="https://goo.gl/maps/39n2WnBfwcgPLnUu8" target="_blank">
+          <div class="venue"><i class="fa fa-map-marker" aria-hidden="true"> Get Direction </i></div>
+         </a>
+      </p>
+      <div class="music">
+         <audio src="./assets/mp3/cleo-birhtday.mp3" id="audio"></audio> 
+        <!-- <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>  -->
+      </div>
+           </div>
+         </div>
+       
+       </div>
+
+       <hr class="hr3">  
+       <!-- Health Protocol -->
+       <div text-align=center>
+         
+        <p class="dance-med">
+          Clio Nirell Marvelyn
+        </p>
+        <p class="happiness">Sweet 17<sup>th</sup> BIRTHDAY PROTOCOL </p>
+        <p class="footer">
+          To make sure that everyone is safe during the party, <br/>
+          here's some protocols that need to be followed: 
+        </p>
+
+         <div class="center">
+          <img class="tile__img" src="./assets/img/Face-Mask.jpg" alt=""  />
+        </div>
+
+        <p class="footer">
+          Please wear your mask all the time. <br/> <br/><br/>
+        </p>
+
+        <hr class="hr3">  
+
+        <br/>
+        <p class="footer">
+          We make sure that all the guests, crews and vendors's body tempeature are safe to join the party. <br/>
+        </p>
+
+        <div class="center">
+          <img class="tile__img" src="./assets/img/Temperature-Gun.jpg" alt=""  />
+        </div>
+
+
+       </div>
+       <hr class="hr3">  
+       <p class="dance-med">
+        Dear Clio
+       </p>
+       <!-- <div class="container-birthday">
+        <iframe src="https://docs.google.com/spreadsheets/d/1YCZsD4TdzMdo8lZX7bqrXNBosyNQng5fsZClM4S9q6o/gviz/tq?tqx=out:html&tq&gid=0" height="315" width="450" allowfullscreen="" frameborder="0" ></iframe>
+      </div> -->
+      <div class="container-birthday">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Wishes</th>
+            </tr>
+          </thead>
+          <tbody id="myData">
+            <tbody>
+        </table>
+        
+        <script> 
+        
+        </script>
+      </div>
+      
+      <hr class="hr3">  
+       <p class="dance-med">
+        Send Your Wishes
+       </p>
+
+       <div class="column1">
+        <form id="myForm">
+      
+          <label for="Name">Sender Name</label>
+          <input type="text"name="Name" placeholder="Your name..">
+
+          <br>
+          <label for="BirthdayWishes">Your Wishes</label> <br>
+          <textarea name="Wishes" placeholder="Say your wishes to clio.." style="height:200px"></textarea>
+          <br/>
+          <div class="leftalize"> 
+          <label>Attendance</label>
+            <br/>
+            <input type="radio" id="attendance" name="attendance" value="Yes" /> Yes<br/>
+            <input type="radio" id="attendance" name="attendance" value="No" /> No<br/>
+          </div>
+        </form>
+        <br/>
+        <button class="button button2" onclick="SubForm()">Send</button>
+    
+      </div>
+      
+
+      <br>   
+      <hr class="hr3">
+
+      
+  
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+      <script  src="./js/script.js"></script>
+      <script src="/path/to/flickity.pkgd.min.js"></script>
+      <script>
+        
+        window.onload = fetchAPI;
+
+        function fetchAPI() {
+          fetch('https://api.apispreadsheets.com/data/17802/')
+            .then(res => res.text())
+            .then((out) => {
+              let jsonData = JSON.parse(out);
+              for (let i = 0; i < jsonData.data.length; i++) {
+                let earnings = jsonData.data[i];
+                myData.innerHTML +=
+                  "<tr><td>" + earnings.Name + "</td>" +
+                  "<td align='right'>" + earnings.Wishes + "</td>";
+              };
+            })
+            .catch(err => console.error(err));
+        }
+      </script>
+</body>
+
+</html>
+
