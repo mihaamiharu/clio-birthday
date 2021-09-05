@@ -146,7 +146,7 @@
       
 
       <div class="container-wishes">
-        <table id ="wishes-table" cellpadding="0" cellspacing="0" border="0">
+        <table cellpadding="0" cellspacing="0" border="0">
           <tbody id="myData">
             <tbody>
         </table>
@@ -203,7 +203,7 @@
               for (let i = 0; i < jsonData.data.length; i++) {
                 let earnings = jsonData.data[i];
                 myData.innerHTML +=
-                  "<td align='right' > &#34" + earnings.Wishes + " &#34</td>" +
+                  "<td align='center' > &#34" + earnings.Wishes + " &#34</td>" +
                   "<tr><td align='center' style='font-style: italic; font-size: 12px;'> - " + earnings.Name + "</td>" + "<br/>"; 
                   
               };
